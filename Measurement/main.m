@@ -7,11 +7,13 @@
 //
 
 #import <Foundation/Foundation.h>
-
+#import "measurement.h"
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        // insert code here...
-        NSLog(@"Hello, World!");
+        Measurement * myMeasurement = [Measurement alloc];
+        myMeasurement = [myMeasurement init: 10 inches: 15];
+        [myMeasurement Print];
     }
+   
     return 0;
 }
